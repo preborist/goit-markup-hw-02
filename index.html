@@ -1,289 +1,223 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Studio</title>
-  </head>
 
-  <body>
-    <!-- ШАПКА САЙТА -->
-    <header>
-      <nav>
-        <a href="./index.html"><span>Web</span> Studio</a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Studio</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- ШАПКА САЙТА -->
+  <header>
+    <nav>
+      <a href="./index.html" class="logo-title">Web <span>Studio</span></a>
+      <ul class="site-nav list">
+        <li><a href="./index.html" class="link current">Студия</a></li>
+        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+      </ul>
+    </nav>
+    <ul class="header-contacts list">
+      <li>
+        <address>
+          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+        </address>
+      </li>
+      <li>
+        <address>
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        </address>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- HERO секция -->
+    <section class="hero">
+      <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <button class="button primary">Заказать услугу</button>
+    </section>
+
+    <!-- Наши преимущества -->
+    <section class="section">
+      <h2 hidden>Наши преимущества</h2>
+      <ul class="features list">
+        <li>
+          <img src="./images/advantages/advantage-1.svg" alt="иконка спутниковой тарелки" width="70" height="70" />
+          <h3 class="features-title">Внимание к деталям</h3>
+          <p>
+            Идейные соображения, а также начало повседневной работы по
+            формированию позиции.
+          </p>
+        </li>
+        <li>
+          <img src="./images/advantages/advantage-2.svg" alt="иконка часов" width="70" height="70" />
+          <h3 class="features-title">Пунктуальность</h3>
+          <p>
+            Задача организации, в особенности же рамки и место обучения кадров
+            влечет за собой.
+          </p>
+        </li>
+        <li>
+          <img src="./images/advantages/advantage-3.svg" alt="иконка графика планирования" width="70" height="70" />
+          <h3 class="features-title">Планирование</h3>
+          <p>
+            Равным образом консультация с широким активом в значительной
+            степени обуславливает.
+          </p>
+        </li>
+        <li>
+          <img src="./images/advantages/advantage-4.svg" alt="иконка космонавта" width="70" height="70" />
+          <h3 class="features-title">Современные технологии</h3>
+          <p>
+            Значимость этих проблем настолько очевидна, что реализация
+            плановых заданий.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Чем мы занимаемся -->
+    <section class="section">
+      <h2 class="section-title">Чем мы занимаемся</h2>
+      <ul class="branches list">
+        <li>
+          <img src="./images/line-of-business/line-of-business-1.jpg" alt="человек печатает за ноутбуком" width="370"
+            height="294" />
+          <h3 class="branches-item-title">Десктопные приложения</h3>
+        </li>
+        <li>
+          <img src="./images/line-of-business/line-of-business-2.jpg" alt="смартфон" width="370" height="294" />
+          <h3 class="branches-item-title">Мобильные приложения</h3>
+        </li>
+        <li>
+          <img src="./images/line-of-business/line-of-business-3.jpg" alt="монитор" width="370" height="294" />
+          <h3 class="branches-item-title">Дизайнерские решения</h3>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Наша команда -->
+    <section class="section team">
+      <h2 class="section-title">Наша команда</h2>
+      <ul class="team list">
+        <li>
+          <img src="./images/team/member-1.jpg" alt="дизайнер продукта" width="270" height="260" />
+          <h3 class="team-member-title">Николай Кучеренко</h3>
+          <p lang="en">Product Designer</p>
+          <ul class="socials list">
+            <li><a href="" aria-label="иконка инстаграма"></a></li>
+            <li><a href="" aria-label="иконка твиттера"></a></li>
+            <li><a href="" aria-label="иконка фейсбука"></a></li>
+            <li><a href="" aria-label="иконка линкедина"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="./images/team/member-2.jpg" alt="разработчик" width="270" height="260" />
+          <h3 class="team-member-title">Ольга Иванова</h3>
+          <p lang="en">Frontend Developer</p>
+          <ul class="socials list">
+            <li><a href="" aria-label=" иконка инстаграма"></a>
+            </li>
+            <li><a href="" aria-label="иконка твиттера"></a></li>
+            <li><a href="" aria-label="иконка фейсбука"></a></li>
+            <li><a href="" aria-label="иконка линкедина"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="./images/team/member-3.jpg" alt="маркетолог" width="270" height="260" />
+          <h3 class="team-member-title">Андрей Шевченко</h3>
+          <p lang="en">Marketing</p>
+          <ul class="socials list">
+            <li><a href="" aria-label=" иконка инстаграма"></a>
+            </li>
+            <li><a href="" aria-label="иконка твиттера"></a></li>
+            <li><a href="" aria-label="иконка фейсбука"></a></li>
+            <li><a href="" aria-label="иконка линкедина"></a></li>
+          </ul>
+        </li>
+        <li>
+          <img src="./images/team/member-4.jpg" alt="дизайнер пользовательского интерфейса" />
+          <h3 class="team-member-title">Иван Николаев</h3>
+          <p lang="en">UI Designer</p>
+          <ul class="socials list">
+            <li><a href="" aria-label=" иконка инстаграма"></a>
+            </li>
+            <li><a href="" aria-label="иконка твиттера"></a></li>
+            <li><a href="" aria-label="иконка фейсбука"></a></li>
+            <li><a href="" aria-label="иконка линкедина"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Постоянные клиенты -->
+    <section class="section">
+      <h2 class="section-title">Постоянные клиенты</h2>
+      <ul class="customers list">
+        <li>
+          <a href="" target="_blank"><img src="./images/customers/customer-1.svg"
+              alt="логотип компании нашего клиента" /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="./images/customers/customer-2.svg"
+              alt="логотип компании нашего клиента" /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="./images/customers/customer-3.svg"
+              alt="логотип компании нашего клиента" /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="./images/customers/customer-4.svg"
+              alt="логотип компании нашего клиента" /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="./images/customers/customer-5.svg"
+              alt="логотип компании нашего клиента" /></a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="./images/customers/customer-6.svg"
+              alt="логотип компании нашего клиента" /></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div>
+      <a href="./index.html" class="logo-title white">Web <span>Studio</span></a>
+      <ul class="footer-contacts list">
         <li>
           <address>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="https://goo.gl/maps/Biz81QyFRvCuKjjt5" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
           </address>
         </li>
         <li>
           <address>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a href="mailto:info@example.com" class="link">info@example.com</a>
+          </address>
+        </li>
+        <li>
+          <address>
+            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
           </address>
         </li>
       </ul>
-    </header>
+    </div>
 
-    <main>
-      <!-- HERO секция -->
-      <section>
-        <h1>Эффективные решения для вашего бизнеса</h1>
-        <button>Заказать услугу</button>
-      </section>
+    <div>
+      <b>присоединяйтесь</b>
+      <ul class="socials list">
+        <li><a href="" aria-label=" иконка инстаграма"></a></li>
+        <li><a href="" aria-label="иконка твиттера"></a></li>
+        <li><a href="" aria-label="иконка фейсбука"></a></li>
+        <li><a href="" aria-label="иконка линкедина"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 
-      <!-- Наши преимущества -->
-      <section>
-        <h2 hidden>Наши преимущества</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/advantages/advantage-1.svg"
-              alt="иконка спутниковой тарелки"
-              width="70"
-              height="70"
-            />
-            <h3>Внимание к деталям</h3>
-            <p>
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/advantages/advantage-2.svg"
-              alt="иконка часов"
-              width="70"
-              height="70"
-            />
-            <h3>Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/advantages/advantage-3.svg"
-              alt="иконка графика планирования"
-              width="70"
-              height="70"
-            />
-            <h3>Планирование</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/advantages/advantage-3.svg"
-              alt="иконка космонавта"
-              width="70"
-              height="70"
-            />
-            <h3>Современные технологии</h3>
-            <p>
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Чем мы занимаемся -->
-      <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/line-of-business/line-of-business-1.jpg"
-              alt="человек печатает за ноутбуком"
-              width="370"
-              height="294"
-            />
-            <h3>Десктопные приложения</h3>
-          </li>
-          <li>
-            <img
-              src="./images/line-of-business/line-of-business-2.jpg"
-              alt="смартфон"
-              width="370"
-              height="294"
-            />
-            <h3>Мобильные приложения</h3>
-          </li>
-          <li>
-            <img
-              src="./images/line-of-business/line-of-business-3.jpg"
-              alt="монитор"
-              width="370"
-              height="294"
-            />
-            <h3>Дизайнерские решения</h3>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Наша команда -->
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/team/member-1.jpg"
-              alt="дизайнер продукта"
-              width="270"
-              height="260"
-            />
-            <h3>Николай Кучеренко</h3>
-            <p lang="en">Product Designer</p>
-            <ul>
-              <li><a href="" aria-label="иконка инстаграма"></a></li>
-              <li><a href="" aria-label="иконка твиттера"></a></li>
-              <li><a href="" aria-label="иконка фейсбука"></a></li>
-              <li><a href="" aria-label="иконка линкедина"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/team/member-2.jpg"
-              alt="разработчик"
-              width="270"
-              height="260"
-            />
-            <h3>Ольга Иванова</h3>
-            <p lang="en">Frontend Developer</p>
-            <ul>
-              <li><a href="" aria-label="иконка инстаграма"></a></li>
-              <li><a href="" aria-label="иконка твиттера"></a></li>
-              <li><a href="" aria-label="иконка фейсбука"></a></li>
-              <li><a href="" aria-label="иконка линкедина"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/team/member-3.jpg"
-              alt="маркетолог"
-              width="270"
-              height="260"
-            />
-            <h3>Андрей Шевченко</h3>
-            <p lang="en">Marketing</p>
-            <ul>
-              <li><a href="" aria-label="иконка инстаграма"></a></li>
-              <li><a href="" aria-label="иконка твиттера"></a></li>
-              <li><a href="" aria-label="иконка фейсбука"></a></li>
-              <li><a href="" aria-label="иконка линкедина"></a></li>
-            </ul>
-          </li>
-          <li>
-            <img
-              src="./images/team/member-4.jpg"
-              alt="дизайнер пользовательского интерфейса"
-            />
-            <h3>Иван Николаев</h3>
-            <p lang="en">UI Designer</p>
-            <ul>
-              <li><a href="" aria-label="иконка инстаграма"></a></li>
-              <li><a href="" aria-label="иконка твиттера"></a></li>
-              <li><a href="" aria-label="иконка фейсбука"></a></li>
-              <li><a href="" aria-label="иконка линкедина"></a></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Постоянные клиенты -->
-      <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
-          <li>
-            <a href="" target="_blank"
-              ><img
-                src="./images/customers/customer-1.svg"
-                alt="логотип компании нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a href="" target="_blank"
-              ><img
-                src="./images/customers/customer-2.svg"
-                alt="логотип компании нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a href="" target="_blank"
-              ><img
-                src="./images/customers/customer-3.svg"
-                alt="логотип компании нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a href="" target="_blank"
-              ><img
-                src="./images/customers/customer-4.svg"
-                alt="логотип компании нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a href="" target="_blank"
-              ><img
-                src="./images/customers/customer-5.svg"
-                alt="логотип компании нашего клиента"
-            /></a>
-          </li>
-          <li>
-            <a href="" target="_blank"
-              ><img
-                src="./images/customers/customer-6.svg"
-                alt="логотип компании нашего клиента"
-            /></a>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <!-- Подвал сайта -->
-    <footer>
-      <div>
-        <a href="./index.html"><span>Web</span> Studio</a>
-        <ul>
-          <li>
-            <address>
-              <a href="https://goo.gl/maps/Biz81QyFRvCuKjjt5" target="_blank"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </address>
-          </li>
-          <li>
-            <address>
-              <a href="mailto:info@example.com">info@example.com</a>
-            </address>
-          </li>
-          <li>
-            <address>
-              <a href="tel:+380991111111">+38 099 111 11 11</a>
-            </address>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <b>присоединяйтесь</b>
-        <ul>
-          <li><a href="" aria-label="иконка инстаграма"></a></li>
-          <li><a href="" aria-label="иконка твиттера"></a></li>
-          <li><a href="" aria-label="иконка фейсбука"></a></li>
-          <li><a href="" aria-label="иконка линкедина"></a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
 </html>

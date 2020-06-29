@@ -1,0 +1,142 @@
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121 */
+
+/* цвет фона #FFFFFF */
+/* вторичный цвет фона #F5F4FA */
+
+/* цвет фона футера #2F303A */
+
+/* акцент #2196F3 */
+
+:root {
+    --primary-text-color: #757575;
+    --primary-title-text-color: #212121;
+    --white-color: #FFFFFF;
+    --secondary-bg-text-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
+
+    --accent-color: #2196F3;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* Buttons */
+
+.button {
+    color: var(--primary-title-text-color);
+    background-color: var(--secondary-bg-text-color);
+}
+
+.button.primary,
+.button:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* logo */
+
+.logo-title {
+    color: var(--accent-color);
+}
+
+.logo-title span {
+    color: #000000;
+}
+
+.logo-title.white span {
+    color: var(--white-color);
+}
+
+/* Site-nav */
+
+.site-nav .link {
+    color: var(--primary-title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+/* Header contacts */
+
+.header-contacts .link {
+    color: var(--primary-text-color);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+    color: var(--accent-color);
+}
+
+/* Hero section */
+
+.hero {
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.hero-title {
+    color: var(--white-color);
+}
+
+/* features */
+
+.features img {
+    background-color: var(--secondary-bg-text-color);
+}
+
+
+.section-title,
+.features-title,
+.team-member-title,
+.potfolio-item-title {
+    color: var(--primary-title-text-color);
+}
+
+/* Branches */
+
+.branches-item-title {
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Team */
+.section.team {
+    background-color: var(--secondary-bg-text-color);
+}
+
+.team.list li {
+    background-color: var(--white-color);
+}
+
+/* Footer */
+
+footer,
+footer a {
+    color: var(--white-color);
+    background-color: var(--footer-bg-color);
+
+}
+
+.footer-contacts .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio */
+
+.potfolio-item-subtitle {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.potfolio-item-text {
+    color: var(--white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+}
